@@ -15,7 +15,7 @@ Using base16-builder-python:
 
 ```
 pybase16 update
-pybase16 built -t wmaker -s <scheme>
+pybase16 build -t wmaker -s <scheme>
 setstyle output/wmaker/colors/base16-<scheme>.style
 ```
 
