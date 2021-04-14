@@ -4,6 +4,25 @@ base16-wmaker
 This is a [base16](http://chriskempson.com/projects/base16/) template
 for the [Window Maker](http://www.windowmaker.org/) window manager.
 
+Usage
+-----
+To generate Window Maker themes, you will need a base16 builder (e.g.,
+[base16-builder-python](
+https://github.com/InspectorMustache/base16-builder-python)) and
+decide on a scheme.
+
+Using base16-builder-python:
+
+```
+pybase16 update
+pybase16 built -t wmaker -s <scheme>
+setstyle output/wmaker/colors/base16-<scheme>.style
+```
+
+Alternatively, you can copy the `.style` file to
+`~/GNUstep/Library/WindowMaker/Styles` and then it will then be
+available under the Window Maker "Appearances" menu.
+
 ---
 
 Copyright 2020 Doug Torrance <dtorrance@piedmont.edu>
